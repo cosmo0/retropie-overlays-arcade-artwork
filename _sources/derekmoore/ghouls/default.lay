@@ -1,0 +1,501 @@
+<!-- ghouls.lay -->
+
+<mamelayout version="2">
+
+  <element name="Blank">
+    <image file="Blank.png" />
+  </element>
+
+  <element name="Artwork">
+    <image file="art.png" />
+  </element>
+
+  <element name="Artwork1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="Artwork2">
+    <image file="art2.png" />
+  </element>
+
+  <element name="Artwork3">
+    <image file="art4k.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="screen_bezel_glass">
+    <image file="horz_screen_bezel_glass.png" />
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="up" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="up.png" state="1"/>
+
+  </element>
+
+
+  <element name="down" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="down.png" state="1"/>
+
+  </element>
+
+
+  <element name="left" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="left.png" state="1"/>
+
+  </element>
+
+
+  <element name="right" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="right.png" state="1"/>
+
+  </element>
+
+
+  <element name="jump" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="jump.png" state="1"/>
+
+  </element>
+
+
+  <element name="fire" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="fire.png" state="1"/>
+
+  </element>
+
+
+  <element name="coin1" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="coin1.png" state="1"/>
+
+  </element>
+
+
+  <element name="coin2" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="coin2.png" state="1"/>
+
+  </element>
+
+
+   <view name="A1">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="jump" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="fire" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin1" inputtag="IN0" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin2" inputtag="IN0" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="A1_Glass">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="jump" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="fire" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin1" inputtag="IN0" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin2" inputtag="IN0" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+  <view name="A2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="jump" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="fire" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin1" inputtag="IN0" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin2" inputtag="IN0" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+  <view name="A2_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="jump" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="fire" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin1" inputtag="IN0" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="coin2" inputtag="IN0" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="B1">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="B2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+
+   <view name="C1">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="C2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="4k_1">
+    <screen index="0">
+      <bounds x="960" y="0" width="5760" height="4320" />
+    </screen>
+
+    <bezel element="Artwork3">
+      <bounds x="0" y="0" width="7680" height="4320" />
+    </bezel>
+  </view>
+
+  <view name="4k_2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork3">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+</mamelayout>

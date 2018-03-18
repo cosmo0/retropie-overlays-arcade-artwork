@@ -1,0 +1,413 @@
+<!-- kof98.lay -->
+
+<mamelayout version="2">
+
+  <element name="Artwork_1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="Artwork_1b">
+    <image file="art1b.png" />
+  </element>
+
+  <element name="Artwork_2">
+    <image file="art2.png" />
+  </element>
+
+  <element name="Artwork_2b">
+    <image file="art2b.png" />
+  </element>
+
+  <element name="Artwork_3">
+    <image file="art3.png" />
+  </element>
+
+  <element name="Artwork_3b">
+    <image file="art3b.png" />
+  </element>
+
+  <element name="Artwork_4">
+    <image file="art4.png" />
+  </element>
+
+  <element name="Artwork_5">
+    <image file="art5.png" />
+  </element>
+
+  <element name="Artwork_5b">
+    <image file="art5b.png" />
+  </element>
+
+  <element name="Artwork_6">
+    <image file="art6.png" />
+  </element>
+
+  <element name="Artwork_6b">
+    <image file="art6b.png" />
+  </element>
+
+  <element name="Artwork_7">
+    <image file="art7.png" />
+  </element>
+
+  <element name="Artwork_8">
+    <image file="art8.png" />
+  </element>
+
+  <element name="Orion's Angel">
+    <image file="Orion's Angel.png" />
+  </element>
+
+  <element name="Orion's Angel (clear)">
+    <image file="Orion's Angel (clear).png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="screen_bezel_glass">
+    <image file="horz_screen_bezel_glass.png" />
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+   <view name="Custom_Glass">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_5">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom_Clear">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_5b">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom_Full_(Glass)">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_7">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom_Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_7">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom_Framed_(Glass)">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+    
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_7">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom_Framed_Clear">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_7">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Glass">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_6">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Clear">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_6b">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Full_(Glass)">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_8">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_8">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Framed_(Glass)">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+    
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_8">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Custom2_Framed_Clear">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_8">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Plain_Glass">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Plain_Clear">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_1b">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Decorated_Glass">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Decorated_Clear">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_2b">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Dark_Glass">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_3">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Dark_Clear">
+    <screen index="0">
+      <bounds x="379" y="105" width="1160" height="870" />
+    </screen>
+
+    <bezel element="Artwork_3b">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Classic_Full_(Glass)">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_4">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Classic_Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_4">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Classic_Framed_(Glass)">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+    
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_4">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Classic_Framed_Clear">
+     <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_4">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Orion's_Angel_Glass">
+    <screen index="0">
+      <bounds x="511" y="87" width="924" height="693" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="511" y="87" width="924" height="693" />
+    </overlay>
+
+    <bezel element="Orion's Angel">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Orion's_Angel_Clear">
+    <screen index="0">
+      <bounds x="511" y="87" width="924" height="693" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="511" y="87" width="924" height="693" />
+    </overlay>
+
+    <bezel element="Orion's Angel (clear)">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+</mamelayout>

@@ -1,0 +1,15 @@
+<!-- rtype2.lay -->
+
+<mamelayout version="2">
+	<element name="bezelA">
+		<image file="Bezel - 16x9 (Ashurax).png" />
+	</element>
+	<view name="Ashurax 16x9">
+		<screen index="0">
+			<bounds x="322" y="37" width="1277" height="1006" />
+		</screen>
+		<bezel element="bezelA">
+			<bounds x="0" y="0" width="1920" height="1080" />
+		</bezel>
+	</view>
+</mamelayout>

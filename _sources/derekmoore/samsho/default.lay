@@ -1,0 +1,480 @@
+<!-- neogeo.lay -->
+
+<mamelayout version="2">
+
+  <element name="Artwork_1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="cpo">
+    <image file="neogeo_cpo.png" />
+  </element>
+
+  <element name="cab">
+    <image file="cab.png" />
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="digit" defstate="10">
+    <led7seg>
+      <color red="1.0" green="0.0" blue="0.0" />
+  </led7seg>
+  </element>
+
+  <element name="Up" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="Up.png" state="1"/>
+
+  </element>
+
+
+  <element name="Down" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="Down.png" state="1"/>
+
+  </element>
+
+
+  <element name="Left" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Left.png" state="1"/>
+
+  </element>
+
+
+  <element name="Right" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Right.png" state="1"/>
+
+  </element>
+
+
+  <element name="Upleft" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="Upleft.png" state="1"/>
+
+  </element>
+
+
+  <element name="Downright" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="Downright.png" state="1"/>
+
+  </element>
+
+
+  <element name="Downleft" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Downleft.png" state="1"/>
+
+  </element>
+
+
+  <element name="Upright" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Upright.png" state="1"/>
+
+  </element>
+
+
+  <element name="red_button" defstate="0">
+    <image file="button_red.png"  state="0" />
+    <image file="button_red_pressed.png" state="1" />
+  </element>
+
+  <element name="yellow_button" defstate="0">
+    <image file="button_yellow.png"  state="0" />
+    <image file="button_yellow_pressed.png" state="1" />
+  </element>
+
+  <element name="green_button" defstate="0">
+    <image file="button_green.png"  state="0" />
+    <image file="button_green_pressed.png" state="1" />
+  </element>
+
+  <element name="blue_button" defstate="0">
+    <image file="button_blue.png"  state="0" />
+    <image file="button_blue_pressed.png" state="1" />
+  </element>
+
+  <element name="white_button" defstate="0">
+    <image file="button_white.png"  state="0" />
+    <image file="button_white_pressed.png" state="1" />
+  </element>
+
+   <view name="Animated Cabinet">
+    <screen index="0">
+    <bounds x="480" y="105" width="960" height="721" />
+    </screen>
+
+    <cpanel element="Up" inputtag=":edge:joy:JOY1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag=":edge:joy:JOY1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag=":edge:joy:JOY1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag=":edge:joy:JOY1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag=":edge:joy:JOY2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag=":edge:joy:JOY2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag=":edge:joy:JOY2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag=":edge:joy:JOY2" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="blue_button" inputtag="edge:joy:JOY1" inputmask="0x80">
+      <bounds x="890" y="967" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="blue_button" inputtag="edge:joy:JOY2" inputmask="0x80">
+      <bounds x="1336" y="967" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="green_button" inputtag="edge:joy:JOY1" inputmask="0x40">
+      <bounds x="829" y="968" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="green_button" inputtag="edge:joy:JOY2" inputmask="0x40">
+      <bounds x="1274" y="968" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="yellow_button" inputtag="edge:joy:JOY1" inputmask="0x20">
+      <bounds x="770" y="986" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="yellow_button" inputtag="edge:joy:JOY2" inputmask="0x20">
+      <bounds x="1215" y="986" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="red_button" inputtag="edge:joy:JOY1" inputmask="0x10">
+      <bounds x="717" y="1017" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="red_button" inputtag="edge:joy:JOY2" inputmask="0x10">
+      <bounds x="1163" y="1017" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x100">
+      <bounds x="530" y="848" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x200">
+      <bounds x="883" y="848" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x400">
+      <bounds x="986" y="848" width="50" height="50" />
+    </cpanel>
+
+    <bezel name="digit1" element="digit">
+      <bounds x="660" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit2" element="digit">
+      <bounds x="680" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit3" element="digit">
+      <bounds x="1115" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit4" element="digit">
+      <bounds x="1135" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel element="cab">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Animated Cabinet Glass">
+    <screen index="0">
+    <bounds x="480" y="105" width="960" height="721" />
+    </screen>
+
+   <backdrop element="screen_glass">
+    <bounds x="480" y="105" width="960" height="721" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+    <bounds x="480" y="105" width="960" height="721" />
+    </overlay>
+
+    <cpanel element="Up" inputtag=":edge:joy:JOY1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag=":edge:joy:JOY1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag=":edge:joy:JOY1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag=":edge:joy:JOY1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag=":edge:joy:JOY2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag=":edge:joy:JOY2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag=":edge:joy:JOY2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag=":edge:joy:JOY2" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="blue_button" inputtag="edge:joy:JOY1" inputmask="0x80">
+      <bounds x="890" y="967" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="blue_button" inputtag="edge:joy:JOY2" inputmask="0x80">
+      <bounds x="1336" y="967" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="green_button" inputtag="edge:joy:JOY1" inputmask="0x40">
+      <bounds x="829" y="968" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="green_button" inputtag="edge:joy:JOY2" inputmask="0x40">
+      <bounds x="1274" y="968" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="yellow_button" inputtag="edge:joy:JOY1" inputmask="0x20">
+      <bounds x="770" y="986" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="yellow_button" inputtag="edge:joy:JOY2" inputmask="0x20">
+      <bounds x="1215" y="986" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="red_button" inputtag="edge:joy:JOY1" inputmask="0x10">
+      <bounds x="717" y="1017" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="red_button" inputtag="edge:joy:JOY2" inputmask="0x10">
+      <bounds x="1163" y="1017" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x100">
+      <bounds x="530" y="848" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x200">
+      <bounds x="883" y="848" width="50" height="50" />
+    </cpanel>
+
+    <cpanel element="white_button" inputtag="SYSTEM" inputmask="0x400">
+      <bounds x="986" y="848" width="50" height="50" />
+    </cpanel>
+
+    <bezel name="digit1" element="digit">
+      <bounds x="660" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit2" element="digit">
+      <bounds x="680" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit3" element="digit">
+      <bounds x="1115" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel name="digit4" element="digit">
+      <bounds x="1135" y="860" width="20" height="30" />
+    </bezel>
+
+    <bezel element="cab">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Full_Glass">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Framed">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Framed_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+
+</mamelayout>
+

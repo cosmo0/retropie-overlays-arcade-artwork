@@ -1,0 +1,134 @@
+<!-- f1en.lay -->
+
+
+
+<mamelayout version="2">
+
+
+  <element name="bezelA">
+
+    <image file="art.png" />
+
+  </element>
+
+    <element name="Upshift" defstate="0">
+
+     <image file="Upshift.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+    <element name="Downshift" defstate="0">
+
+     <image file="Downshift.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+    <element name="Throttle" defstate="0">
+
+     <image file="throttle.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+    <element name="Brake" defstate="0">
+
+     <image file="brake.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+    <element name="Left" defstate="0">
+
+     <image file="left.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+    <element name="Right" defstate="0">
+
+     <image file="right.png" state="1"/>
+
+     <image file="Blank.png" state="0"/>
+
+    </element>
+
+
+  <view name="Scratched Used Cabinet">
+
+    <screen index="0">
+
+      <bounds x="368" y="95" width="1201" height="898" />
+
+  </screen>
+
+    <bezel element="bezelA">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+  </bezel>
+
+    <cpanel element="Upshift" inputtag=":mainpcb:P1_A" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+    <cpanel element="Downshift" inputtag=":mainpcb:P1_A" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+    <cpanel element="Throttle" inputtag=":mainpcb:ANALOG2" inputmask="255">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+    <cpanel element="Brake" inputtag=":mainpcb:ANALOG3" inputmask="255">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+    <cpanel element="Left" inputtag=":mainpcb:SERVICE12_A" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+    <cpanel element="Right" inputtag=":slavepcb:SERVICE12_A" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+
+
+</mamelayout>

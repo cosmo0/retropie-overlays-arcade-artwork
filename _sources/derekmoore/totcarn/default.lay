@@ -1,0 +1,35 @@
+<!-- totcarn.lay -->
+
+<mamelayout version="2">
+	<element name="bezelG">
+		<image file="Bezel - 16x9 totcarn with IC's (Grizz).png" />
+	</element>
+	<view name="Grizz 16x9">
+		<screen index="0">
+			<bounds x="324" y="73" width="1203" height="896" />
+		</screen>
+		<bezel element="bezelG">
+			<bounds x="0" y="0" width="1852" height="1043" />
+		</bezel>
+	</view>
+	<element name="inst">
+		<image file="total_carnage_inst.png" />
+	</element>
+	<view name="Inst_Card">
+		<screen index="0">
+			<bounds x="0" y="0" width="4000" height="3000" />
+		</screen>
+		<bezel element="inst">
+			<bounds x="500" y="3050" width="3000" height="654" />
+		</bezel>
+	</view>
+</mamelayout>
+
+<!--
+
+- Artwork type: Instruction card
+- Scanned instruction card provided by CAG / BYOAC Artwork
+- Converted for MAME by Mr. Do
+- Lay file by Mr. Do
+
+-->

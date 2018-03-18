@@ -1,0 +1,1318 @@
+<!-- sf2ce.lay -->	   
+	   
+  <mamelayout version="2">
+
+  <element name="Artwork_1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="Artwork_2">
+    <image file="art2.png" />
+  </element>
+
+  <element name="Cabinet">
+    <image file="sf2ce_nmva_ws.png" />
+  </element>
+
+  <element name="Up" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="Up.png" state="1"/>
+
+  </element>
+
+
+  <element name="Down" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="Down.png" state="1"/>
+
+  </element>
+
+
+  <element name="Left" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Left.png" state="1"/>
+
+  </element>
+
+
+  <element name="Right" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Right.png" state="1"/>
+
+  </element>
+
+
+  <element name="Upleft" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="Upleft.png" state="1"/>
+
+  </element>
+
+
+  <element name="Downright" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="Downright.png" state="1"/>
+
+  </element>
+
+
+  <element name="Downleft" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Downleft.png" state="1"/>
+
+  </element>
+
+
+  <element name="Upright" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Upright.png" state="1"/>
+
+  </element>
+
+
+  <element name="LP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="LP.png" state="1"/>
+
+  </element>
+
+
+  <element name="MP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="MP.png" state="1"/>
+
+  </element>
+
+
+  <element name="HP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="HP.png" state="1"/>
+
+  </element>
+
+
+  <element name="LK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="LK.png" state="1"/>
+
+  </element>
+
+
+  <element name="MK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="MK.png" state="1"/>
+
+  </element>
+
+
+  <element name="HK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="HK.png" state="1"/>
+
+  </element>
+
+
+  <element name="u" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="u.png" state="1"/>
+
+  </element>
+
+
+  <element name="d" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="d.png" state="1"/>
+
+  </element>
+
+
+  <element name="l" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="l.png" state="1"/>
+
+  </element>
+
+
+  <element name="r" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="r.png" state="1"/>
+
+  </element>
+
+
+  <element name="dl" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="dl.png" state="1"/>
+
+  </element>
+
+
+  <element name="dr" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="dr.png" state="1"/>
+
+  </element>
+
+
+  <element name="ul" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="ul.png" state="1"/>
+
+  </element>
+
+
+  <element name="ur" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="ur.png" state="1"/>
+
+  </element>
+
+
+  <element name="1" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="1.png" state="1"/>
+
+  </element>
+
+
+  <element name="2" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="2.png" state="1"/>
+
+  </element>
+
+
+  <element name="3" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="3.png" state="1"/>
+
+  </element>
+
+
+  <element name="4" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="4.png" state="1"/>
+
+  </element>
+
+
+  <element name="5" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="5.png" state="1"/>
+
+  </element>
+
+
+  <element name="6" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="6.png" state="1"/>
+
+  </element>
+
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="screen_bezel_glass">
+    <image file="horz_screen_bezel_glass.png" />
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+   <view name="Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="Up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LP" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Full_Glass">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+    <cpanel element="Up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LP" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Framed">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="Up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LP" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Framed_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="290" y="50" width="1340" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="Up" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upright" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Upleft" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downleft" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Downright" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LP" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Full_Clear_2">
+    <screen index="0">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </screen>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="u" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="d" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="l" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="r" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ur" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ul" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dl" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dr" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="1" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="2" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="3" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="4" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="5" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="6" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Full_Glass_2">
+    <screen index="0">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </overlay>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="u" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="d" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="l" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="r" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ur" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ul" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dl" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dr" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="1" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="2" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="3" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="4" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="5" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="6" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Framed_2">
+    <screen index="0">
+      <bounds x="399" y="128" width="1122" height="826" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="399" y="128" width="1122" height="826" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </backdrop>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="u" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="d" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="l" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="r" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ur" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ul" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dl" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dr" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+
+    <cpanel element="1" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="2" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="3" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="4" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="5" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="6" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Framed_Glass_2">
+    <screen index="0">
+      <bounds x="399" y="128" width="1122" height="826" />
+    </screen>
+    
+    <overlay element="screen_mask">
+      <bounds x="399" y="128" width="1122" height="826" />
+    </overlay>
+
+   <backdrop element="screen_bezel_glass">
+      <bounds x="361" y="90" width="1198" height="900" />
+    </backdrop>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="u" inputtag="IN1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="d" inputtag="IN1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="l" inputtag="IN1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="r" inputtag="IN1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ur" inputtag="IN1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="ul" inputtag="IN1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dl" inputtag="IN1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="dr" inputtag="IN1" inputmask="2048">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="1" inputtag="IN1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="2" inputtag="IN1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="3" inputtag="IN1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="4" inputtag="IN2" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="5" inputtag="IN2" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="6" inputtag="IN2" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+  <view name="Orion's Angel">
+  <screen index="0">
+    <bounds x="531" y="215" width="847" height="640" />
+  </screen> 
+    <overlay element="screen_mask">
+    <bounds x="531" y="215" width="847" height="640" />
+    </overlay>
+  <bezel element="Cabinet">
+    <bounds x="0" y="0" width="1920" height="1080" />
+  </bezel>
+  </view>
+
+</mamelayout>

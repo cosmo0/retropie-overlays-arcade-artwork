@@ -1,0 +1,207 @@
+<!-- name_of_ROM.lay -->
+
+<mamelayout version="2">
+
+  <element name="Artwork">
+    <image file="art.png" />
+  </element>
+
+  <element name="Artwork2">
+    <image file="art2.png" />
+  </element>
+
+  <element name="Artwork3">
+    <image file="art3.png" />
+  </element>
+
+  <element name="Artwork4">
+    <image file="art4.png" />
+  </element>
+
+  <element name="Artwork5">
+    <image file="art5.png" />
+  </element>
+
+  <element name="Artwork6">
+    <image file="art6.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="screen_grey_clear">
+    <image file="screen_bezel_clear.png" />
+  </element>
+
+  <element name="screen_grey_glass">
+    <image file="screen_bezel_glass.png" />
+  </element>
+
+  <element name="screen_black_glass">
+    <image file="screen_bezel_glass_black.png" />
+  </element>
+
+   <view name="A_1">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="A_2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="A_3">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_black_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="B_1">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="B_2">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="B_3">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_black_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="B_4">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_grey_clear">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="B_5">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_grey_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="Orion's Angel">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <bezel element="Artwork3">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="Corrected_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <bezel element="Artwork4">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="Corrected_Clear">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+    <bezel element="Artwork5">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="Corrected_Black_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_black_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork6">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+  <view name="Corrected_Black_Clear">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork6">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+</mamelayout>

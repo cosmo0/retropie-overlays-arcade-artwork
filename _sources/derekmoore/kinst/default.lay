@@ -1,0 +1,511 @@
+<!-- kinst.lay -->
+
+<mamelayout version="2">
+
+  <element name="Artwork">
+    <image file="art.png" />
+  </element>
+
+  <element name="cab">
+    <image file="cab.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+  <element name="screen_bezel_glass">
+    <image file="horz_screen_bezel_glass.png" />
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="LP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="LP.png" state="1"/>
+
+  </element>
+
+
+  <element name="MP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="MP.png" state="1"/>
+
+  </element>
+
+
+  <element name="HP" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="HP.png" state="1"/>
+
+  </element>
+
+
+  <element name="LK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="LK.png" state="1"/>
+
+  </element>
+
+
+  <element name="MK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="MK.png" state="1"/>
+
+  </element>
+
+
+  <element name="HK" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="HK.png" state="1"/>
+
+  </element>
+
+
+  <element name="Up" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="Up.png" state="1"/>
+
+  </element>
+
+
+  <element name="Down" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="Down.png" state="1"/>
+
+  </element>
+
+
+  <element name="Left" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Left.png" state="1"/>
+
+  </element>
+
+
+  <element name="Right" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="Right.png" state="1"/>
+
+  </element>
+
+
+  <element name="UpLeft" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+
+    <image file="UpLeft.png" state="1"/>
+
+  </element>
+
+
+  <element name="UpRight" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="UpRight.png" state="1"/>
+
+  </element>
+
+
+  <element name="DownRight" defstate="0">
+
+    <image file="Blank.png" state="0"/>
+    <image file="DownRight.png" state="1"/>
+
+  </element>
+
+
+  <element name="DownLeft" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="DownLeft.png" state="1"/>
+
+  </element>
+
+
+  <element name="P1start" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="P1start.png" state="1"/>
+
+  </element>
+
+
+  <element name="P2start" defstate="0">
+
+     <image file="Blank.png" state="0"/>
+
+     <image file="P2start.png" state="1"/>
+
+  </element>
+
+
+   <view name="Animated Cabinet">
+    <screen index="0">
+    <bounds x="480" y="50" width="960" height="721" />
+    </screen>
+
+    <bezel element="cab">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="LP" inputtag="P1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="P1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="P1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="P1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="P1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="P1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Up" inputtag="P1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="P1" inputmask="128">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="P1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="P1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="UpLeft" inputtag="P2" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="UpRight" inputtag="P2" inputmask="128">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="DownLeft" inputtag="P2" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="DownRight" inputtag="P2" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="P1start" inputtag="P1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="P2start" inputtag="P2" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Animated Cabinet Glass">
+    <screen index="0">
+    <bounds x="480" y="50" width="960" height="721" />
+    </screen>
+
+   <backdrop element="screen_glass">
+    <bounds x="480" y="50" width="960" height="721" />
+    </backdrop>
+    
+    <overlay element="screen_mask">
+    <bounds x="480" y="50" width="960" height="721" />
+    </overlay>
+
+    <bezel element="cab">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+
+    <cpanel element="LP" inputtag="P1" inputmask="1">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MP" inputtag="P1" inputmask="2">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HP" inputtag="P1" inputmask="4">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="LK" inputtag="P1" inputmask="8">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="MK" inputtag="P1" inputmask="16">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="HK" inputtag="P1" inputmask="32">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Up" inputtag="P1" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Down" inputtag="P1" inputmask="128">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Left" inputtag="P1" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="Right" inputtag="P1" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="UpLeft" inputtag="P2" inputmask="64">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="UpRight" inputtag="P2" inputmask="128">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="DownLeft" inputtag="P2" inputmask="256">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="DownRight" inputtag="P2" inputmask="512">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="P1start" inputtag="P1" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+
+    <cpanel element="P2start" inputtag="P2" inputmask="1024">
+
+      <bounds x="0" y="0" width="1920" height="1080" />
+     <orientation rotate="0" />
+
+    </cpanel>
+
+  </view>
+
+   <view name="Full_Clear">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Full_Glass">
+    <screen index="0">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </screen>
+
+   <backdrop element="screen_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <overlay element="screen_mask">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </overlay>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Framed">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+   <view name="Framed_Glass">
+    <screen index="0">
+      <bounds x="290" y="50" width="1340" height="980" />
+    </screen>
+
+   <backdrop element="screen_bezel_glass">
+      <bounds x="240" y="0" width="1440" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+</mamelayout>

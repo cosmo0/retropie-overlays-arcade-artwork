@@ -1,0 +1,276 @@
+<!-- mslug2.lay -->
+
+<mamelayout version="2">
+
+////////////////////////////////////////////////////////////
+
+-------------------UNIVERSAL ELEMENTS-----------------------
+
+  <element name="Universal">
+    <image file="universal.png" />
+  </element>
+
+  <element name="Universal B">
+    <image file="universalb.png" />
+  </element>
+
+  <element name="Universal C">
+    <image file="universalc.png" />
+  </element>
+
+
+////////////////////////////////////////////////////////////
+  <element name="Artwork_1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="Artwork_2">
+    <image file="art2.png" />
+  </element>
+
+  <element name="Artwork_3">
+    <image file="art3.png" />
+  </element>
+
+  <element name="Artwork_3a">
+    <image file="art3a.png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <element name="screen_bezel">
+    <image file="horz_screen_bezel.png" />
+  </element>
+
+
+//////////////////////////////////////////////////////////
+  <view name="View 1A">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>
+    
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+   <view name="View_1B">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+  <view name="View 2A">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>  
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+   <view name="View_2B">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_2">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+  <view name="View 3A">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>  
+
+    <bezel element="Artwork_3">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+   <view name="View_3B">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_3">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+  <view name="View 3C">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>   
+
+    <bezel element="Artwork_3a">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+   <view name="View_3D">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Artwork_3a">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+-------------------UNIVERSAL BEZELS-----------------------
+  <view name="Universal A1">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>
+
+    <bezel element="Universal">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+   <view name="Universal A2">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Universal">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+//////////////////////////////////////////////////////////
+  <view name="Universal B1">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>
+    
+    <bezel element="Universal B">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view> 
+//////////////////////////////////////////////////////////
+   <view name="Universal B2">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Universal B">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+//////////////////////////////////////////////////////////
+  <view name="Universal C1">
+    <screen index="0">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </screen>
+
+    <overlay element="screen_mask">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </overlay>
+    
+    <bezel element="Universal C">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view> 
+//////////////////////////////////////////////////////////
+   <view name="Universal C2">
+    <screen index="0">
+      <bounds x="322" y="50" width="1276" height="980" />
+    </screen>
+    
+    <overlay element="screen_mask">
+       <bounds x="322" y="50" width="1276" height="980" />
+    </overlay>
+
+   <backdrop element="screen_bezel">
+      <bounds x="272" y="0" width="1376" height="1080" />
+    </backdrop>
+
+    <bezel element="Universal C">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  </view>
+
+
+</mamelayout>

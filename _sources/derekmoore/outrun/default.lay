@@ -1,0 +1,88 @@
+<!-- outrun.lay -->
+
+<mamelayout version="2">
+
+  <element name="Artwork_1">
+    <image file="art1.png" />
+  </element>
+
+  <element name="cpanel" >
+    <image file="lo.png" state="0"/>
+    <image file="hi.png" state="1"/>
+  </element>
+
+  <element name="cpanel2" >
+    <image file="lo2.png" state="0"/>
+    <image file="hi2.png" state="1"/>
+  </element>
+
+  <element name="screen_glass">
+    <image file="glass.png" />
+  </element>
+
+  <element name="screen_mask">
+    <image file="horz_screen_mask.png" />
+  </element>
+
+  <view name="Bezel (animated shifter)">
+    <screen index="0">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </screen>
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  <cpanel element="cpanel" inputtag="SERVICE" inputmask="0x10">
+      <bounds x="0" y="0" width="1920" height="1080" />
+  </cpanel>
+  </view>
+
+  <view name="Bezel Glass (animated shifter)">
+    <screen index="0">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </screen>
+   <backdrop element="screen_glass">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </backdrop>
+    <overlay element="screen_mask">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </overlay>
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  <cpanel element="cpanel" inputtag="SERVICE" inputmask="0x10">
+      <bounds x="0" y="0" width="1920" height="1080" />
+  </cpanel>
+  </view>
+
+  <view name="Bezel (animated shifter minimal)">
+    <screen index="0">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </screen>
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  <cpanel element="cpanel2" inputtag="SERVICE" inputmask="0x10">
+      <bounds x="0" y="0" width="1920" height="1080" />
+  </cpanel>
+  </view>
+
+  <view name="Bezel Glass(animated shifter minimal)">
+    <screen index="0">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </screen>
+   <backdrop element="screen_glass">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </backdrop>
+    <overlay element="screen_mask">
+      <bounds x="320" y="20" width="1280" height="960" />
+    </overlay>
+    <bezel element="Artwork_1">
+      <bounds x="0" y="0" width="1920" height="1080" />
+    </bezel>
+  <cpanel element="cpanel2" inputtag="SERVICE" inputmask="0x10">
+      <bounds x="0" y="0" width="1920" height="1080" />
+  </cpanel>
+  </view>
+
+
+</mamelayout>
