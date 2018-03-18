@@ -10,13 +10,13 @@ const sharp = require('sharp');
 let templateOverlay = fs.readFileSync('src/template-overlay.cfg', { encoding: 'utf-8' });
 
 // check all packs
-let packs = fs.readdirSync('.').filter(dir => dir.startsWith('overlays-'));
+let packs = fs.readdirSync('.').filter(dir => dir.startsWith('overlays'));
 for (let pack of packs) {
     console.log('');
     console.log('');
     console.log('========== PACK %s ==========', pack);
 
-    let templateRom = fs.readFileSync('src/template-game-' + pack.replace('overlays-', '') + '.cfg', { encoding: 'utf-8' });
+    let templateRom = fs.readFileSync('src/template-game.cfg', { encoding: 'utf-8' });
     let romsFolder = path.join(pack, 'roms');
     let overlaysFolder = path.join(pack, 'configs/all/retroarch/overlay/arcade');
 
