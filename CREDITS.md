@@ -10,5 +10,6 @@ Here are a few places I picked images from. I have not used all of them.
 - [Pack by UDb23](https://github.com/UDb23/rpie-ovl)
 - [Pack by Simbz33](https://github.com/simbz33/retropie-overlay)
 - [Pack by Derek Moore](https://www.youtube.com/user/oldstarscream)
+- Compilation for MotionBlue Raspberry Pi image
 
 Usage of these packs in a commercial product are strictly forbidden.
