@@ -32,7 +32,7 @@ for (let pack of packs) {
         overlayFile = overlayFile.substring(overlayFile.lastIndexOf('/')); // just the file name
         let packOverlayFile = path.join(overlaysFolder, overlayFile); // concatenate with pack path
     
-        usedOverlays.push(overlayFile);
+        usedOverlays.push(overlayFile.startsWith('/') ? overlayFile.substring(1) : overlayFile);
 
         // check that the overlay file exists
         if (!fs.existsSync(packOverlayFile)) {
@@ -46,7 +46,9 @@ for (let pack of packs) {
     console.log('');
     console.log('===== Checking overlays =====');
 
-    let overlaysFiles = fs.readdirSync(overlaysFolder).filter(file => file.endsWith('.cfg') && !file.startsWith('_'));
+    let createRoms = readlineSync.keyInYNStrict('Do you wish to create rom configs for unused overlays?');
+
+    let overlaysFiles = fs.readdirSync(overlaysFolder).filter(file => file.endsWith('.cfg'));
     let overlayPromises = [];
     for (let overlayFile of overlaysFiles) {
         // get image file name
@@ -65,13 +67,13 @@ for (let pack of packs) {
         }
 
         // check that a rom config uses this overlay
-        if (!usedOverlays.indexOf(overlayFile)) {
-            console.log('> Overlay %s is not used by any rom config');
-            if (readlineSync.keyInYNStrict('Do you wish to create it?')) {
-                fs.writeFileSync(
-                    path.join(romsFolder, overlayFile.replace('.cfg', '.zip.cfg')),
-                    templateRom.replace('{{game}}', overlayFile.replace('.cfg', '')));
-            }
+        let romFile = overlayFile.replace('.cfg', '.zip.cfg');
+
+        if (createRoms && usedOverlays.indexOf(overlayFile) < 0 && !fs.existsSync(romFile)) {
+            console.log('> Creating rom config for overlay %s', overlayFile);
+            fs.writeFileSync(
+                path.join(romsFolder, romFile),
+                templateRom.replace('{{game}}', overlayFile.replace('.cfg', '')));
         }
     }
 
