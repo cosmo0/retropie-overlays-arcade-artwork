@@ -1,4 +1,0 @@
-{
-    "roms": "roms",
-    "overlays": { "src": "configs/all/retroarch/overlay/arcade", "dest": "all/retroarch/overlay/arcade" }
-}
