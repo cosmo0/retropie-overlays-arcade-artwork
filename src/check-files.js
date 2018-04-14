@@ -89,7 +89,7 @@ if (readlineSync.keyInYNStrict('Do you wish to create overlays configs for unuse
             console.log('Creating overlay config for %s', overlayImageFile);
             fs.writeFileSync(
                 path.join(overlaysFolder, game + '.cfg'),
-                templateRom.replace('{{game}}', game));
+                templateOverlay.replace('{{game}}', game));
             
             // then obviously create a rom config
             fs.writeFileSync(
