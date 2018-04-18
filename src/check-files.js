@@ -10,8 +10,8 @@ const sharp = require('sharp');
 let templateOverlay = fs.readFileSync('src/template-overlay.cfg', { encoding: 'utf-8' });
 let templateRom = fs.readFileSync('src/template-game.cfg', { encoding: 'utf-8' });
 
-let romsFolder = 'overlays';
-let overlaysFolder = 'overlays/overlays';
+let romsFolder = 'overlays/roms';
+let overlaysFolder = 'overlays/configs';
 
 let usedOverlays = [];
 
