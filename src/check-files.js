@@ -7,11 +7,13 @@ const path = require('path');
 const readlineSync = require('readline-sync');
 const sharp = require('sharp');
 
-let templateOverlay = fs.readFileSync('src/template-overlay.cfg', { encoding: 'utf-8' });
-let templateRom = fs.readFileSync('src/template-game.cfg', { encoding: 'utf-8' });
+const templateOverlay = fs.readFileSync('src/template-overlay.cfg', { encoding: 'utf-8' });
+const templateRom = fs.readFileSync('src/template-game.cfg', { encoding: 'utf-8' });
 
-let romsFolder = 'overlays/roms';
-let overlaysFolder = 'overlays/configs';
+const romsFolder = 'overlays/roms';
+const overlaysFolder = 'overlays/configs';
+
+const configPath = '/opt/retropie/configs/all/retroarch/overlay/arcade-artwork';
 
 let usedOverlays = [];
 
@@ -19,20 +21,33 @@ console.log('');
 console.log('');
 console.log('===== Checking roms =====');
 
+let replacePath = readlineSync.keyInYNStrict('Autocorrect any wrong path?');
+
 let romsFiles = fs.readdirSync(romsFolder).filter(file => file.endsWith('.cfg') && !file.startsWith('_'));
 for (let romFile of romsFiles) {
     // get overlay file path
     let cfgContent = fs.readFileSync(path.join(romsFolder, romFile), { encoding: 'utf-8' });
-    let overlayFile = /input_overlay[\s]*=[\s]*(.*\.cfg)/igm.exec(cfgContent)[1]; // extract overlay path
-    overlayFile = overlayFile.substring(overlayFile.lastIndexOf('/')); // just the file name
-    let packOverlayFile = path.join(overlaysFolder, overlayFile); // concatenate with pack path
+    let overlayFile = /input_overlay[\s]*=[\s]*"?(.*\.cfg)"?/igm.exec(cfgContent)[1]; // extract overlay path
 
-    usedOverlays.push(overlayFile.startsWith('/') ? overlayFile.substring(1) : overlayFile);
+    // check overlays is configured with absolute path
+    if (!overlayFile.startsWith(configPath)) {
+        console.log('> Overlay for rom %s has a relative path: %s', romFile, overlayFile);
+        if (replacePath) {
+            overlayFile = overlayFile.substring(overlayFile.lastIndexOf('/') + 1); // just the file name
+            overlayFile = '/opt/retropie/configs/all/retroarch/overlay/arcade-artwork/' + overlayFile;
+            let newContent = cfgContent.replace(/input_overlay[\s]*=[\s]*"?(.*\.cfg)"?/igm, 'input_overlay = ' + overlayFile);
+            fs.writeFileSync(path.join(romsFolder, romFile), newContent);
+        }
+    } else {
+        overlayFile = overlayFile.substring(overlayFile.lastIndexOf('/') + 1); // just the file name
+        let packOverlayFile = path.join(overlaysFolder, overlayFile); // concatenate with pack path
+        usedOverlays.push(overlayFile);
 
-    // check that the overlay file exists
-    if (!fs.existsSync(packOverlayFile)) {
-        console.log('> Overlay %s for rom %s does not exist', packOverlayFile, romFile);
-        readlineSync.keyInPause();
+        // check that the overlay file exists
+        if (!fs.existsSync(packOverlayFile)) {
+            console.log('> Overlay %s for rom %s does not exist', packOverlayFile, romFile);
+            readlineSync.keyInPause();
+        }
     }
 }
 
@@ -108,21 +123,23 @@ if (overlayPromises.length > 0) {
     console.log('');
     console.log('===== Resize overlays =====');
 
-    overlayPromises.forEach(p => {
-        p.promise.then(meta => {
-            // make sure the image is resized in 1080p
-            if (meta.width > 1920 || meta.height > 1080) {
-                console.log('> Must resize the image %s to 1080p', p.file);
-                return p.img
-                    .resize(1920, 1080)
-                    .crop(sharp.strategy.center)
-                    .toBuffer();
-            }
-        }).then(buffer => {
-            if (buffer && buffer != null) {
-                fs.writeFileSync(p.file, buffer);
-                console.log('> Resize OK - %s', p.file);
-            }
+    if (readlineSync.keyInYNStrict('Do you wish to resize the overlays?')) {
+        overlayPromises.forEach(p => {
+            p.promise.then(meta => {
+                // make sure the image is resized in 1080p
+                if (meta.width > 1920 || meta.height > 1080) {
+                    console.log('> Must resize the image %s to 1080p', p.file);
+                    return p.img
+                        .resize(1920, 1080)
+                        .crop(sharp.strategy.center)
+                        .toBuffer();
+                }
+            }).then(buffer => {
+                if (buffer && buffer != null) {
+                    fs.writeFileSync(p.file, buffer);
+                    console.log('> Resize OK - %s', p.file);
+                }
+            });
         });
-    });
+    }
 }
