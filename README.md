@@ -13,9 +13,9 @@ I did mostly nothing except move files around and mess with config files. If you
 
 If one of your file is here and you want me to remove it, or want to be credited, please [file an issue](https://github.com/cosmo0/retropie-arcade-overlays/issues).
 
-## Artwork overlays (1235 games)
+## Artwork overlays (2982 games)
 
-Compilation of "artwork-style" arcade overlays for many games.
+Compilation of "artwork" decorations overlays.
 
 There is an artwork or fanart images around the game area, to maximize it, and just cover the black border around with an image. Sometimes it's inspired from the artwork on the real cabinet, sometimes it's completely custom-made.
 
